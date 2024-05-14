@@ -1,0 +1,10 @@
+<div></div>
+  <h1><%= @task.title%></h1>
+  <h2>Here is your quest, farewell!📜</h2>
+  <p><%= @task.details%></p>
+  <p><%= @task.completed ? "✅" : "❌"%></p>
+</div>
+<div>
+  <%= link_to "Edit your task here", edit_task_path(@task) %>
+  <%= link_to "All Tasks", tasks_path %>
+</div>
